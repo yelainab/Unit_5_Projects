@@ -15,12 +15,15 @@
 
 /* Grid Rows Styles */
 div.row{
-   width: 100%
+   width: 100%;
 }
-div.row{
+div.row::after{
    clear: both;
    content: "";
    display: table;
+}
+div.row{
+   overflow: auto;
 }
 /* Grid Columns Styles */
 div.column{
@@ -59,6 +62,4 @@ div.column80{
 
 
 /* Grid Spacing Styles */
-container, row, column, cell, a{
-   box-sizing: border-box;
-}
+
