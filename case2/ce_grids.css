@@ -16,17 +16,16 @@
 /* Grid Rows Styles */
 div.row{
    width: 100%;
+   clear: both;
 }
 div.row::after{
    clear: both;
    content: "";
    display: table;
 }
-div.row{
-   overflow: auto;
-}
+
 /* Grid Columns Styles */
-div.column{
+div[class^="column"]{
    float: left;
 }
 div.column100{
@@ -62,4 +61,18 @@ div.column80{
 
 
 /* Grid Spacing Styles */
-
+div.container{
+   box-sizing: border-box;
+}
+div.row{
+   box-sizing: border-box;
+}
+div.column{
+   box-sizing: border-box;
+}
+div.cell{
+   box-sizing: border-box;
+}
+div.cell > a{
+   box-sizing: border-box;
+}
